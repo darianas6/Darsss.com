@@ -1,39 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Pacifico&display=swap');
+@keyframes myAnimation {
+  0% {top:-400px;}
+  50% {top:70px;}
+  100% {top:0px;}
+}
 
 html{
     background-image: url(https://images.stockcake.com/public/3/9/7/397a63d1-47a7-46ec-be59-9ea911f28d52_large/starry-pixel-night-stockcake.jpg);
 }
-
 button {
     background-image: url(https://www.clker.com/cliparts/P/X/o/q/j/g/light-yellow-star-md.png);
     background-color: transparent;
-    height: 289px;
+    position: relative;
+    height: 285px;
     width: 300px;
     padding: 10px;
-    border: 5px hidden transparent;
+    border: 10px none transparent;
     margin: 10px;
     font-family: 'Bitcount Prop Double Ink', sans-serif;
-    font-size: 30px;
-}   
+    font-size: 34px;
+    animation-name: myAnimation;
+    animation-duration: 30s;
+}  
+button:hover{
+    animation-play-state: paused;
+} 
+button:active {
+  transform: translateY(4px);
+}
 
 .footer{
     border: 5px solid rgb(24, 4, 102);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
     padding: 20px;
     color: rgb(236, 237, 204);
     font-family: pacifico, cursive;
     background-color: rgba(24, 31, 106, 0.981);
-    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    position:relative;
+    left:-20px;
     width: 100%;
+    
 }
-
-.center-div {
+.center-div{
     height: 86vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
